@@ -1,0 +1,31 @@
+# Project specific
+**/input/*
+**/output/*
+
+# DotEnv Properties file
+.env
+
+# IPython NB Checkpoints
+.ipynb_checkpoints
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE / System files
+*.DS_Store
+*.vscode
+*.idea
+*.pycharm
+*.vscode
+*_cache
+
+# Only keep Pipfile.lock versioned
+Pipfile
+
+# logs
+/logs/
+
+# Poetry env folder
+**/.venv/*
