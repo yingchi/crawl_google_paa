@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "crawl_google_paa"
+version = "0.1.0"
+description = ""
+authors = ["Yingchi Pei <ypei@indeed.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytest = "^5.3.5"
+
+[tool.poetry.dev-dependencies]
+webdrivermanager = "^0.7.4"
+tqdm = "^4.42.1"
+black = "^19.10b0"
+
+[tool.black]
+line-length = 120
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | \.idea
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
